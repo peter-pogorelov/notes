@@ -30,6 +30,6 @@
 
 ### IV. Connect to cassandra cluster from DBeaver.
 1. Download DBeaver https://dbeaver.io/download/
-2. Download latest datastax-simba driver https://web.archive.org/web/20230803185236mp_/https://downloads.datastax.com/jdbc/cql/2.0.13.1014/SimbaCassandraJDBC42-2.0.13.1014.zip
+2. Download latest datastax-simba driver https://web.archive.org/web/20230803185236mp_/https://downloads.datastax.com/jdbc/cql/2.0.13.1014/SimbaCassandraJDBC42-2.0.13.1014.zip, or you can just get it from cassandra/drivers folder in this repository.
 3. Follow the instruction https://stackoverflow.com/a/66454612
 4. Add new connection, type the following link `jdbc:cassandra://127.0.0.1:9042` and click "Test connection"

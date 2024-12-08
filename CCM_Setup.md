@@ -23,5 +23,7 @@
 ### II. Create cassandra cluster for 3 nodes
 1. Create loopback alias for second node `sudo ifconfig lo0 alias 127.0.0.2`
 2. Create loopback alias for third node `sudo ifconfig lo0 alias 127.0.0.3`
-3. Create cluster `ccm create -v 3.0.0 -n 3 my_cluster --vnodes`
+3. Create cluster `ccm create -v 2.0.5 -I "127.0.0.%d" -n 3 my_cluster --vnodes`
 4. Start cluster `ccm start`
+5. Try to access raw nodetool run `cd  ~/.ccm/repository/2.0.5/ && ./bin/nodetool`
+6. Try to access proxy nodetool run `ccm node1 nodetool`
